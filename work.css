@@ -1,0 +1,349 @@
+a:hover {
+opacity: 0.3;
+filter: alpha(opacity=30);
+}
+
+h1, h2, h2 a, h3, h3 a, h4, h4 a {
+    color: white;
+}
+
+h2 a:visted, h3 a:visited, h4 a:visited {
+    color: grey;
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.bio {
+    margin: 100px;    
+}
+
+.bio p {
+  background-color: white;
+  padding: 30px;
+  font-size: 150%;
+}
+
+.bio_image {
+    border: 5px solid;
+    border-color: white;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card_container {
+    margin: 0 0 50px 0;
+}
+
+.credit_container {
+  position: relative;
+  width: 50%;
+}
+
+.credit_container:hover .credit_middle, .credit_container:hover .credit_middle_cards {
+  opacity: 1;
+}
+
+.credit_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0%;
+  margin: 0 0 5px 5px;
+  width:100%;
+  text-align: center;
+}
+
+.credit_middle_cards {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0%;
+  margin: 0 0 5px 10px;
+  width:100%;
+  text-align: center;
+}
+
+.credit_text {
+  background-color: rgba(189, 195, 199, 0.5);
+  color: white;
+  font-size: 150%;
+  padding: 10px;
+}
+
+.credit_text_card {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  font-size: 150%;
+  padding: 10px;
+}
+
+.credit_text_card a {
+  color: white;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin: 0 0 50px 0;
+}
+		
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+    background-position: center;
+    background-color: black;
+    background-image: url("work1.gif");
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.lima {
+    background-color: #654321;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.lima_1ed{
+    background-image: url("https://i.imgur.com/HtR97hw.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.ongoing {
+  margin: 100px;
+}
+
+.ongoing img {
+  padding: 5px;
+  border: 5px solid;
+  width: 100%;
+  max-width: 500px;
+}
+
+.ongoing p {
+  font-size: 400%;
+  background-color: white;
+}
+
+.showz {
+  margin: 100px;
+}
+
+.showz img {
+  padding: 5px;
+  border: 5px solid;
+  width: 100%;
+  max-width: 717px;
+}
+
+.showz p {
+  font-size: 400%;
+  background-color: white;
+}
+
+.showz_email img {
+    background-color: black;
+    border-color: white;
+    max-width: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.warren {
+    background-position: center;
+    background-color: black;
+    background-image: url("https://i.imgur.com/RYYUl86.gif");
+    background-repeat: repeat;
+    background-size: 5%;
+    height: 100%;
+    width: 100%;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.warrenshowz {
+  margin: 100px 0px;
+}
+
+.warrenshowz p {
+  font-size: 400%;
+  background-color: white;
+}
+
+.warrenshowz img {
+    padding: 5px;
+    border: 10px solid;
+    border-color: white;
+    width: 100%;
+    max-width: 900px;
+}
+
+#bottom_img {
+    height: 700px;
+}
+
+#butt {
+  width: 100%;
+  max-width: 500px;
+}
+
+#card_title, #lima_trailer_title {
+    font-size: 200%;
+}
+
+#descrip {
+    padding: 0 200px;
+    color: white;
+    font-size: 150%;
+    text-align: justify;
+}
+
+#fund_container {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    overflow: hidden;
+    padding: 5px;
+    margin: 50px 0px;
+}
+
+#cards {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin: 0px 5px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#donate {
+    margin: 0px 0px 5px 0px;
+}
+
+#donate_img {
+    height: 200px;
+}
+
+ #donate_text {
+        font-size: 175%;
+    }
+
+#funder_list {
+    column-count: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#fund_l {
+    float: left;
+    width: 66%;
+}
+
+#fund_r {
+    float: left;
+    background-color: white;
+}
+
+#left { position: absolute; left: 0; top: 0; width: 50%; }
+#right { position: absolute; right: 0; top: 0; width: 50%; }
+#left img, #right img{
+  width: 55%;
+  max-width: 500px;
+}
+
+#lima_header {
+    margin: 50px 0 0 0;
+    width: 75%;
+}
+
+#lima_poster {
+    margin: 0 0 50px 0;
+    width: 50%;
+}
+
+@media only screen and (max-device-width: 700px) { 
+    .bio p {
+        font-size: 300%;
+        padding: 70px;
+        text-align: justify;
+    }
+    
+    .card_container {
+        padding: 0 15px 0 0;
+    }
+    
+    .credit_middle_cards {
+        opacity: 1;    
+    }
+    
+    .credit_container {
+        width: 90%;
+    }
+    
+    .ongoing {
+        margin: 100px;
+    }
+    
+    .ongoing img {
+        padding: 5px;
+        border: 5px solid;
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    .ongoing p {
+        font-size: 800%;
+    }
+    
+    .showz p {
+        font-size: 700%;
+    }
+    
+    #bottom_img {
+        height: 750px;
+    }
+    
+    #card_title, #lima_trailer_title {
+        font-size: 400%;
+    }
+    
+    #descrip {
+        padding: 0 60px;
+        font-size: 350%;
+    }
+    
+    #donate_text {
+        font-size: 300%;
+    }
+    
+    #lima_header {
+        margin: 50px 10px 0 10px;
+        width: 95%;   
+    }
+    
+    #lima_poster {
+        width: 95%;
+    }
+}
