@@ -38,6 +38,18 @@ header img {
     backface-visibility: hidden;
 }
 
+.butvi_title {
+  background-image: url("https://i.imgur.com/HtR97hw.jpg");
+  color: black;
+  font-size: 400%;
+  margin: 100px;
+}
+
+.butvi_title p {
+  background-color: white;
+  margin: 5px;
+}
+
 .card_container {
     margin: 0 0 50px 0;
 }
@@ -93,7 +105,7 @@ header img {
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
-  margin: 0 0 50px 0;
+  margin: 0;
 }
 		
 .embed-container iframe,
@@ -109,7 +121,7 @@ header img {
 .home {
     background-position: center;
     background-color: black;
-    background-image: url("work1.gif");
+    background-image: url("images/work1.gif");
     background-repeat: repeat;
     height: 100%;
     width: 100%;
@@ -274,14 +286,44 @@ header img {
 }
 
 #lima_header {
-    margin: 50px 0 0 0;
+    margin: 0 0 0 0;
     width: 75%;
 }
 
 #lima_poster {
-    margin: 0 0 50px 0;
+    margin: 50px 0;
     width: 50%;
 }
+
+/* cv formatting */
+
+.cv_header {
+  font-size: 150%;
+  padding: 20px;
+}
+
+.cv_list{
+  padding:25px;
+}
+
+.cv_4_cols {
+  float: left;
+  width: 25%;
+}
+
+.cv_item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cv_4_cols:nth-child(2), .cv_4_cols:nth-child(3) {
+  text-align: center;
+} 
+
+.cv_4_cols:last-child {
+  text-align: right;
+} 
 
 @media only screen and (max-device-width: 700px) { 
     .bio p {
