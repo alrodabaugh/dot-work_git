@@ -120,8 +120,9 @@ header img {
 .home {
     background-position: center;
     background-color: black;
-    background-image: url("images/work1.gif");
+    background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-K7hxT94/0/NSjgBrQFCVH298F36BvTDC6FcxfNXPS2rpgWKGV3K/S/work1_biggerl-S.gif");
     background-repeat: repeat;
+    background-size: 200px;
     height: 100%;
     width: 100%;
     cursor: url('curs.cur'), progress !important;
