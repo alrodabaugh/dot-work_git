@@ -56,7 +56,6 @@ header img {
 
 .credit_container {
   position: relative;
-  width: 50%;
 }
 
 .credit_container:hover .credit_middle, .credit_container:hover .credit_middle_cards {
