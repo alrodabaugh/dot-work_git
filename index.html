@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<!-- HOME PAGE -->
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Alex Rodabaugh" />
   <meta property="og:url" content="http://alexrodabaugh.work" />
-  <!--CHANGE - .ogg-->
   <meta property="og:image" content="http://www.alexrodabaugh.work/ogg.jpg" />
-  <!--END CHANGE-->
   <meta property="og:description" content="Alex Rodabaugh's work." />
   <meta name="author" content="Alex Rodabaugh">
-  <!--CHANGE update keywords-->
   <meta name="keywords"
-    content="Alex Rodabaugh, dance, choreography, choreographer, contemporary perfromance, artist, performance, Gibney, American Realness, Mount Tremper Arts, AmeriSHOWZ, g1br33l" />
-     <!--END CHANGE-->
+    content="Alex Rodabaugh, dance, choreography, choreographer, contemporary performance, artist, performance, Gibney, American Realness, Mount Tremper Arts, AmeriSHOWZ, g1br33l" />
   <title>Alex Rodabaugh</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <link href="work.css" rel="stylesheet" type="text/css">
@@ -22,25 +19,24 @@
 <body class="home">
 
   <!-- Name Banner -->
-    <!--CHANGE header-->
   <header>
-    <img src="images/alex.gif">
+    <img src="images/alex.gif" alt="Alex Rodabaugh">
   </header>
-   <!--END CHANGE-->
 
   <!-- Headshot -->
-  <div class="bio">
-      <div class="credit_container">
-        <a href="https://photos.smugmug.com/Alexs-Images/Cpr-email/i-8d4BpH2/0/NQ53qqXzWwdWJgqgztmLWDWBfrV7cGzNCKhKdjF6t/5K/res03-5K.jpg">
-        <img src="https://photos.smugmug.com/Alexs-Images/Cpr-email/i-8d4BpH2/0/LbzBkQVKxBrvfV88SJpcTsJs9j2WtHHHvSJ2HbFjv/X3/res03-X3.jpg" 
-        class="bio_image" alt="Avatar"></a>
-        <div class="credit_middle">
-          <div class="credit_text">Photo by <a target="_blank" href="https://reslikeyes.com">Res</a></div>
-        </div>
+  <div class="bio" itemscope itemtype="https://schema.org/Person">
+    <div class="credit_container" itemscope itemtype="https://schema.org/ImageObject">
+      <a href="https://photos.smugmug.com/Alexs-Images/Cpr-email/i-8d4BpH2/0/NQ53qqXzWwdWJgqgztmLWDWBfrV7cGzNCKhKdjF6t/5K/res03-5K.jpg">
+        <img src="https://photos.smugmug.com/Alexs-Images/Cpr-email/i-8d4BpH2/0/LbzBkQVKxBrvfV88SJpcTsJs9j2WtHHHvSJ2HbFjv/X3/res03-X3.jpg"
+          class="bio_image" alt="Alex Rodabaugh's headshot" itemprop="image">
+      </a>
+      <div class="credit_middle">
+        <div class="credit_text">Photo by <a target="_blank" href="https://reslikeyes.com" itemprop="author">Res</a></div>
       </div>
+    </div>
 
-    <!-- Artist Statment-->
-    <p>I create performances within the lineage of dance and choreography. My work includes found performance, dance
+    <!-- Artist Statement -->
+    <p itemprop="description">I create performances within the lineage of dance and choreography. My work includes found performance, dance
       generated from numerical scores, improvisation, and both found and written text, with a primary focus on framing.
       Pointing toward the performance of everyday interaction, mass spectacle, illegible manipulation and modes of
       disorientation and control, these performances question good faith and reveal manifestations of power.</p>
@@ -51,61 +47,61 @@
     <center>
       <p>Email Me</p>
       <div class="showz_email">
-        <img src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-vnVhb6S/0/K83fd2WKxnRBd2hRQsxvB34KrPrMwv7f5ChTKSkzW/X2/email5-X2.png">
+        <img src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-vnVhb6S/0/K83fd2WKxnRBd2hRQsxvB34KrPrMwv7f5ChTKSkzW/X2/email5-X2.png" alt="Email icon">
       </div>
     </center>
   </div>
 
   <!-- Ongoing -->
-  <div itemscope itemtype="http://schema.org/DanceEvent" class="ongoing">
+  <div itemscope itemtype="https://schema.org/DanceEvent" class="ongoing">
     <center>
       <p itemprop="startDate">Ongoing</p>
-      <a itemprop="sameAs" href="/lima" target="_blank"><img itemprop="image" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-fFV5ZSw/0/Mx5Q8ZZFZSKVGvpGRnGGPRJXMHRZz2FqBZxgXRh6P/X4/butvi_trading_back-X4.jpg"></a>
+      <a itemprop="sameAs" href="/lima" target="_blank">
+        <img itemprop="image" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-fFV5ZSw/0/Mx5Q8ZZFZSKVGvpGRnGGPRJXMHRZz2FqBZxgXRh6P/X4/butvi_trading_back-X4.jpg" alt="Ongoing work image">
+      </a>
     </center>
   </div>
 
   <!-- Past Work -->
-  <div itemscope itemtype="http://schema.org/DanceEvent" class="showz">
+  <div itemscope itemtype="https://schema.org/DanceEvent" class="showz">
     <center>
       <p itemprop="startDate">2017</p>
-      <a itemprop="sameAs" href="http://www.amerishowz.work" target="_blank"><img itemprop="image"
-          src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-3swxKv3/0/Kz8vWKWH7dWMf8cxrmRk2LttLP9pGXhG6rPJ22xbg/XL/amerishowz-XL.png"></a>
+      <a itemprop="sameAs" href="http://www.amerishowz.work" target="_blank">
+        <img itemprop="image" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-3swxKv3/0/Kz8vWKWH7dWMf8cxrmRk2LttLP9pGXhG6rPJ22xbg/XL/amerishowz-XL.png" alt="AmeriSHOWZ image">
+      </a>
     </center>
   </div>
-  <div itemtype="http://schema.org/DanceEvent" class="showz">
+  <div itemscope itemtype="https://schema.org/DanceEvent" class="showz">
     <center>
       <p itemprop="startDate">2014</p>
-      <a itemprop="sameAs" href="http://www.g1br33l.info" target="_blank"><img itemprop="image"
-          src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-7SR4NkB/0/LkMdXwsh2TT7n9DFd7FnvSpchLshsPmbCXSd57gsK/XL/g1br33l-XL.png"></a>
+      <a itemprop="sameAs" href="http://www.g1br33l.info" target="_blank">
+        <img itemprop="image" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-7SR4NkB/0/LkMdXwsh2TT7n9DFd7FnvSpchLshsPmbCXSd57gsK/XL/g1br33l-XL.png" alt="g1br33l image">
+      </a>
     </center>
   </div>
-  <!--
- <-- Other Stuff !->
- <div class="showz">
-  <center>
-      <p><a href="/other.html">Other Stuff</a></p>
-    </center>
-  </div>
--->
 
   <!-- Mailing List -->
   <div class="showz">
     <center>
-      <p><a target="_blank" href="http://eepurl.com/ig4CyT">Sign Up for Mailinglist</a></p>
+      <p><a target="_blank" href="http://eepurl.com/ig4CyT">Sign Up for Mailing List</a></p>
     </center>
   </div>
 
   <!-- Footer -->
   <footer>
     <div id="left">
-      <img src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-LRhpM9K/0/K6Lm2r3txTcPmMQ62fszf3PL2hRhjzBnNNTnFLKFx/S/pyrloop-S.gif">
+      <img src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-LRhpM9K/0/K6Lm2r3txTcPmMQ62fszf3PL2hRhjzBnNNTnFLKFx/S/pyrloop-S.gif" alt="Header animation left">
     </div>
     <div id="right">
-      <img align="right" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-tMn3BQc/0/MPvZr6TQX2DrTtvjJqJQW7bkJSjX7Lvpf6Xmp5JHD/S/pyrfiploop-S.gif">
+      <img src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-tMn3BQc/0/MPvZr6TQX2DrTtvjJqJQW7bkJSjX7Lvpf6Xmp5JHD/S/pyrfiploop-S.gif" alt="Header animation right">
     </div>
     <div id="bottom">
-      <span style="float:left;"><img id="butt" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-LRhpM9K/0/K6Lm2r3txTcPmMQ62fszf3PL2hRhjzBnNNTnFLKFx/S/pyrloop-S.gif"></span>
-      <span style="float:right"><img id="butt" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-tMn3BQc/0/MPvZr6TQX2DrTtvjJqJQW7bkJSjX7Lvpf6Xmp5JHD/S/pyrfiploop-S.gif"></span>
+      <span style="float:left;">
+        <img id="butt" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-LRhpM9K/0/K6Lm2r3txTcPmMQ62fszf3PL2hRhjzBnNNTnFLKFx/S/pyrloop-S.gif" alt="Footer animation bottom left">
+      </span>
+      <span style="float:right">
+        <img id="butt" src="https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-tMn3BQc/0/MPvZr6TQX2DrTtvjJqJQW7bkJSjX7Lvpf6Xmp5JHD/S/pyrfiploop-S.gif" alt="Footer animation bottom right">
+      </span>
     </div>
   </footer>
 </body>
