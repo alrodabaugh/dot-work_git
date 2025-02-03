@@ -33,9 +33,10 @@ header img {
     opacity: 1;
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+    box-sizing: border-box;
 }
 
 .butvi_title {
@@ -62,12 +63,15 @@ header img {
   opacity: 1;
 }
 
+.credit_container a:hover{
+  opacity: 1;
+}
+
 .credit_middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   bottom: 0%;
-  margin: 0 0 5px 5px;
   width:100%;
   text-align: center;
 }
@@ -83,11 +87,20 @@ header img {
 }
 
 .credit_text {
-  background-color: rgba(189, 195, 199, 0.5);
+  background-color: rgba(1, 1, 1, 0.847);
   color: white;
   font-size: 150%;
   padding: 10px;
 }
+
+.credit_text a {
+  color: white;
+}
+
+.credit_text a:visited, .credit_text a:hover {
+  color: rgb(150, 148, 148);
+}
+
 
 .credit_text_card {
   background-color: rgba(0, 0, 0, 0.75);
@@ -258,7 +271,7 @@ header img {
     height: 200px;
 }
 
- #donate_text {
+#donate_text {
         font-size: 175%;
     }
 
