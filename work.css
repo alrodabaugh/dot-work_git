@@ -14,11 +14,72 @@ h2 a:visted, h3 a:visited, h4 a:visited {
 header img {
   height: 100%;
   width: 100%;
-  margin-top: 50px;
+}
+
+header code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -150px 50px 10px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 616px;
+}
+
+body {
+  min-width: 816px;
+  margin: 0px;
+  overflow-x: auto;
+}
+
+footer {
+  min-width: 816px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Flexbox container for the header GIFs */
+.header_gifs {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out the left and right divs */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Ensure the container spans the full width */
+  min-width: 816px; /* Match the body's min-width */
+  margin-top: -25px;
+}
+
+#left, #right {
+  flex: 1; /* Each div takes up equal space */
+  min-width: 408px; /* Set the minimum width for each div */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+#right {
+  text-align: right;
+}
+
+#left img, #right img {
+  max-width: 60%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#bottom {
+  clear: both; /* Ensure the bottom div clears the floated elements above */
+  width: 100%;
+}
+
+#bottom span {
+  display: inline-block; /* Ensure spans behave as blocks */
+  width: 50%; /* Each span takes up half the width */
+}
+
+#bottom img {
+  max-width: 100%; /* Ensure images don't exceed their container's width */
 }
 
 .bio {
-    margin: 100px;    
+    margin: 0px 100px 100px;    
 }
 
 .bio p {
@@ -165,7 +226,11 @@ header img {
 }
 
 .showz {
-  margin: 100px;
+  margin: 100px 100px 0px;
+}
+
+.showz :last-child{
+  margin-bottom: 0px;
 }
 
 .showz img {
@@ -216,10 +281,6 @@ header img {
     border-color: white;
     width: 100%;
     max-width: 900px;
-}
-
-#bottom_img {
-    height: 700px;
 }
 
 #butt {
@@ -286,13 +347,6 @@ header img {
 #fund_r {
     float: left;
     background-color: white;
-}
-
-#left { position: absolute; left: 0; top: 0; width: 50%; }
-#right { position: absolute; right: 0; top: 0; width: 50%; }
-#left img, #right img{
-  width: 55%;
-  max-width: 500px;
 }
 
 #lima_header {
