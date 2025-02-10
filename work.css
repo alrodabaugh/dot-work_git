@@ -16,17 +16,6 @@ header img {
   width: 100%;
 }
 
-header code {
-  display: block;
-  white-space: pre-wrap;
-  color: white;
-  background-color: black;
-  margin: -150px 50px 10px 50px;
-  box-sizing: border-box;
-  text-align: center;
-  min-width: 616px;
-}
-
 body {
   min-width: 816px;
   margin: 0px;
@@ -86,6 +75,7 @@ footer {
   background-color: white;
   padding: 30px;
   font-size: 150%;
+  border: 5px solid black;
 }
 
 .bio_image {
@@ -114,6 +104,30 @@ footer {
 
 .card_container {
     margin: 0 0 50px 0;
+}
+
+header code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -150px 50px 10px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 616px;
+  border: 2px solid white;
+}
+
+.angel code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -75px auto 0px auto;
+  box-sizing: border-box;
+  min-width: 616px;
+  max-width: 616px;
+  border: 2px solid white;
 }
 
 .credit_container {
@@ -223,6 +237,7 @@ footer {
 .ongoing p {
   font-size: 400%;
   background-color: white;
+  border: 5px solid black;
 }
 
 .showz {
@@ -244,13 +259,14 @@ footer {
 .showz p {
   font-size: 400%;
   background-color: white;
+  border: 5px solid black;
 }
 
 .showz_email img {
     background-color: black;
-    border-color: white;
+    border: 2px solid white;
     max-width: none;
-    padding: 0px;
+    padding: 5px 20px;
     margin: 0px;
     box-sizing: border-box;
 }
