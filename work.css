@@ -405,38 +405,57 @@ header code {
   text-align: right;
 } 
 
-@media only screen and (max-device-width: 700px) { 
+@media only screen and (max-device-width: 700px) {
+  
+    header code {
+      margin: -150px 0px 10px 0px;
+    }
+
+    .bio {
+      margin: 0px 0px 100px; 
+    }
+
     .bio p {
         font-size: 300%;
         padding: 70px;
         text-align: justify;
+        margin: 
     }
     
     .card_container {
         padding: 0 15px 0 0;
+
     }
     
-    .credit_middle_cards {
+    .credit_middle, .credit_middle_cards {
         opacity: 1;    
     }
     
-    .credit_container {
-        width: 90%;
-    }
-    
     .ongoing {
-        margin: 100px;
+        margin: 100px 0px;
     }
     
     .ongoing img {
         padding: 5px;
-        border: 5px solid;
+        border: 2px solid white;
         width: 100%;
-        max-width: 700px;
+        max-width: 1000px;
     }
     
     .ongoing p {
-        font-size: 800%;
+        font-size: 700%;
+    }
+
+    .showz {
+      margin: 100px 0px 0px;
+    }
+
+    .showz img {
+      padding: 5px;
+      border: 2px solid white;
+      width: 100%;
+      max-width: 1000px;
+      box-sizing: border-box;
     }
     
     .showz p {
