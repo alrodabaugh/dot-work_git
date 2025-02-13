@@ -1,19 +1,10 @@
+/* ======================
+   Body
+   ====================== */
+
 a:hover {
-opacity: 0.3;
-filter: alpha(opacity=30);
-}
-
-h1, h2, h2 a, h3, h3 a, h4, h4 a {
-    color: white;
-}
-
-h2 a:visted, h3 a:visited, h4 a:visited {
-    color: grey;
-}
-
-header img {
-  height: 100%;
-  width: 100%;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 
 body {
@@ -22,13 +13,45 @@ body {
   overflow-x: auto;
 }
 
-footer {
-  min-width: 816px;
-  width: 100%;
-  overflow: hidden;
+h1, h2, h2 a, h3, h3 a, h4, h4 a {
+  color: white;
 }
 
-/* Flexbox container for the header GIFs */
+h2 a:visted, h3 a:visited, h4 a:visited {
+  color: grey;
+}
+
+.home {
+  background-position: center;
+  background-color: black;
+  background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-K7hxT94/1/NSk2hXCTD7gGcDsxZrDSWZxRMwsgDnrpjmRHhVvhj/S/work1_biggerl-S.gif");
+  background-repeat: repeat;
+  background-size: 200px;
+  height: 100%;
+  width: 100%;
+  cursor: url('curs.cur'), progress !important;
+}
+
+/* ======================
+   Header
+   ====================== */
+header code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -150px 50px 10px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 616px;
+  border: 2px solid white;
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+}
+
 .header_gifs {
   display: flex; /* Use Flexbox for layout */
   justify-content: space-between; /* Space out the left and right divs */
@@ -38,6 +61,17 @@ footer {
   margin-top: -25px;
 }
 
+/* ======================
+   Footer
+   ====================== */
+
+footer {
+  min-width: 816px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Flexbox container for the header GIFs */
 #left, #right {
   flex: 1; /* Each div takes up equal space */
   min-width: 408px; /* Set the minimum width for each div */
@@ -67,58 +101,15 @@ footer {
   max-width: 100%; /* Ensure images don't exceed their container's width */
 }
 
-.bio {
-    margin: 0px 100px 100px;    
+#butt {
+  width: 100%;
+  max-width: 500px;
 }
 
-.bio p {
-  background-color: white;
-  padding: 30px;
-  font-size: 150%;
-  border: 5px solid black;
-}
-
-.bio_image {
-    border: 5px solid;
-    border-color: white;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 100%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-    box-sizing: border-box;
-}
-
-.butvi_title {
-  background-image: url("https://i.imgur.com/HtR97hw.jpg");
-  color: black;
-  font-size: 400%;
-  margin: 100px;
-}
-
-.butvi_title p {
-  background-color: white;
-  margin: 5px;
-}
-
-.card_container {
-    margin: 0 0 50px 0;
-}
-
-header code {
-  display: block;
-  white-space: pre-wrap;
-  color: white;
-  background-color: black;
-  margin: -150px 50px 10px 50px;
-  box-sizing: border-box;
-  text-align: center;
-  min-width: 616px;
-  border: 2px solid white;
-}
-
-.angel code {
+/* ======================
+    BIO
+    ====================== */
+  .angel code {
   display: block;
   white-space: pre-wrap;
   color: white;
@@ -128,6 +119,33 @@ header code {
   min-width: 616px;
   max-width: 616px;
   border: 2px solid white;
+}
+
+.bio {
+  margin: 0px 100px 100px;    
+}
+
+.bio p {
+background-color: white;
+padding: 30px;
+font-size: 150%;
+border: 5px solid black;
+}
+
+.bio_image {
+  border: 5px solid;
+  border-color: white;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+.card_container {
+  margin: 0 0 50px 0;
 }
 
 .credit_container {
@@ -199,29 +217,9 @@ header code {
   height: 100%;
 }
 
-.home {
-    background-position: center;
-    background-color: black;
-    background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-K7hxT94/0/NSjgBrQFCVH298F36BvTDC6FcxfNXPS2rpgWKGV3K/S/work1_biggerl-S.gif");
-    background-repeat: repeat;
-    background-size: 200px;
-    height: 100%;
-    width: 100%;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.lima {
-    background-color: #654321;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.lima_1ed{
-    background-image: url("https://i.imgur.com/HtR97hw.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    cursor: url('curs.cur'), progress !important;
-}
-
+/* ======================
+    BUTVI ONGOING
+   ====================== */
 .ongoing {
   margin: 100px;
 }
@@ -240,6 +238,13 @@ header code {
   border: 5px solid black;
 }
 
+.work_title {
+  text-align: center;
+}  
+
+/* ======================
+    OTHER SHOWZ
+   ====================== */
 .showz {
   margin: 100px 100px 0px;
 }
@@ -248,7 +253,7 @@ header code {
   margin-bottom: 0px;
 }
 
-.showz img {
+.showz img {  
   padding: 5px;
   border: 5px solid white;
   width: 100%;
@@ -270,140 +275,6 @@ header code {
     margin: 0px;
     box-sizing: border-box;
 }
-
-.warren {
-    background-position: center;
-    background-color: black;
-    background-image: url("https://i.imgur.com/RYYUl86.gif");
-    background-repeat: repeat;
-    background-size: 5%;
-    height: 100%;
-    width: 100%;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.warrenshowz {
-  margin: 100px 0px;
-}
-
-.warrenshowz p {
-  font-size: 400%;
-  background-color: white;
-}
-
-.warrenshowz img {
-    padding: 5px;
-    border: 10px solid;
-    border-color: white;
-    width: 100%;
-    max-width: 900px;
-}
-
-#butt {
-  width: 100%;
-  max-width: 500px;
-}
-
-#card_title, #lima_trailer_title {
-    font-size: 200%;
-}
-
-#descrip {
-    padding: 0 200px;
-    color: white;
-    font-size: 150%;
-    text-align: justify;
-}
-
-#fund_container {
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    overflow: hidden;
-    padding: 5px;
-    margin: 50px 0px;
-}
-
-#cards {
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    margin: 0px 5px;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-#donate {
-    margin: 0px 0px 5px 0px;
-}
-
-#donate_img {
-    height: 200px;
-}
-
-#donate_text {
-        font-size: 175%;
-    }
-
-#funder_list {
-    column-count: 2;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#fund_l {
-    float: left;
-    width: 66%;
-}
-
-#fund_r {
-    float: left;
-    background-color: white;
-}
-
-#lima_header {
-    margin: 0 0 0 0;
-    width: 75%;
-}
-
-#lima_poster {
-    margin: 50px 0;
-    width: 50%;
-}
-
-/* cv formatting */
-
-.cv_header {
-  font-size: 150%;
-  padding: 20px;
-}
-
-.cv_list{
-  padding:25px;
-}
-
-.cv_4_cols {
-  float: left;
-  width: 25%;
-}
-
-.cv_item:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cv_4_cols:nth-child(2), .cv_4_cols:nth-child(3) {
-  text-align: center;
-} 
-
-.cv_4_cols:last-child {
-  text-align: right;
-} 
 
 @media only screen and (max-device-width: 700px) {
   
@@ -453,31 +324,5 @@ header code {
     
     .showz p {
         font-size: 700%;
-    }
-    
-    #bottom_img {
-        height: 750px;
-    }
-    
-    #card_title, #lima_trailer_title {
-        font-size: 400%;
-    }
-    
-    #descrip {
-        padding: 0 60px;
-        font-size: 350%;
-    }
-    
-    #donate_text {
-        font-size: 300%;
-    }
-    
-    #lima_header {
-        margin: 50px 10px 0 10px;
-        width: 95%;   
-    }
-    
-    #lima_poster {
-        width: 95%;
     }
 }
