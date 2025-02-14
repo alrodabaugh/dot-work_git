@@ -13,14 +13,6 @@ body {
   overflow-x: auto;
 }
 
-h1, h2, h2 a, h3, h3 a, h4, h4 a {
-  color: white;
-}
-
-h2 a:visted, h3 a:visited, h4 a:visited {
-  color: grey;
-}
-
 .home {
   background-position: center;
   background-color: black;
@@ -30,6 +22,14 @@ h2 a:visted, h3 a:visited, h4 a:visited {
   height: 100%;
   width: 100%;
   cursor: url('curs.cur'), progress !important;
+}
+
+.subtitle {
+  font-size: 75%;
+}
+
+.year {
+  font-size: 50%;
 }
 
 /* ======================
@@ -222,6 +222,7 @@ border: 5px solid black;
    ====================== */
 .ongoing {
   margin: 100px;
+  text-align: center;
 }
 
 .ongoing img {
@@ -233,14 +234,22 @@ border: 5px solid black;
 }
 
 .ongoing p {
-  font-size: 400%;
   background-color: white;
   border: 5px solid black;
+  font-size: 400%;
 }
 
 .work_title {
+  border: 5px solid darkorange;
+  margin: 0 50px;
   text-align: center;
-}  
+}
+
+#work_words {
+  background-color: black;
+  margin: 0 auto;
+  padding-top: 10px;
+}
 
 /* ======================
     OTHER SHOWZ
