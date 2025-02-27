@@ -218,9 +218,9 @@ border: 5px solid black;
 }
 
 /* ======================
-    BUTVI ONGOING
+   Work
    ====================== */
-.ongoing {
+/* .ongoing {
   margin: 100px;
   text-align: center;
 }
@@ -237,6 +237,14 @@ border: 5px solid black;
   background-color: white;
   border: 5px solid black;
   font-size: 400%;
+} */
+
+.title_of_work img {
+  border: 5px solid white;
+  box-sizing: border-box;
+  display: block;
+  margin: 50px auto;
+  width: 80%;
 }
 
 .work_title {
