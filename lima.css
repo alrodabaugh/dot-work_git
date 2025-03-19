@@ -1,3 +1,16 @@
+header a {
+    color:black;
+}
+
 .lima header code {
     margin: 10px 50px 10px 50px;
+}
+
+#bottom_img {
+    height: 700px;
+}
+
+.credit_container {
+    position: relative;
+    width: 50%;
 }
