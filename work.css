@@ -1,94 +1,193 @@
+/* ======================
+   Body
+   ====================== */
+
 a:hover {
-opacity: 0.3;
-filter: alpha(opacity=30);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
 }
 
-h1, h2, h2 a, h3, h3 a, h4, h4 a {
-    color: white;
+body {
+  min-width: 816px;
+  margin: 0px;
+  overflow-x: auto;
 }
 
-h2 a:visted, h3 a:visited, h4 a:visited {
-    color: grey;
+.home {
+  background-position: center;
+  background-color: black;
+  background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-K7hxT94/1/NSk2hXCTD7gGcDsxZrDSWZxRMwsgDnrpjmRHhVvhj/S/work1_biggerl-S.gif");
+  background-repeat: repeat;
+  background-size: 200px;
+  height: 100%;
+  width: 100%;
+  cursor: url('curs.cur'), progress !important;
+}
+
+.subtitle {
+  font-size: 75%;
+}
+
+.year {
+  font-size: 50%;
+}
+
+/* ======================
+   Header
+   ====================== */
+header code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -150px 50px 10px 50px;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 616px;
+  border: 2px solid white;
 }
 
 header img {
   height: 100%;
   width: 100%;
-  margin-top: 50px;
+}
+
+.header_gifs {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out the left and right divs */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Ensure the container spans the full width */
+  min-width: 816px; /* Match the body's min-width */
+  margin-top: -25px;
+}
+
+/* ======================
+   Footer
+   ====================== */
+
+footer {
+  min-width: 816px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Flexbox container for the header GIFs */
+#left, #right {
+  flex: 1; /* Each div takes up equal space */
+  min-width: 408px; /* Set the minimum width for each div */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+#right {
+  text-align: right;
+}
+
+#left img, #right img {
+  max-width: 60%; /* Ensure images don't exceed their container's width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#bottom {
+  clear: both; /* Ensure the bottom div clears the floated elements above */
+  width: 100%;
+}
+
+#bottom span {
+  display: inline-block; /* Ensure spans behave as blocks */
+  width: 50%; /* Each span takes up half the width */
+}
+
+#bottom img {
+  max-width: 100%; /* Ensure images don't exceed their container's width */
+}
+
+#butt {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ======================
+    BIO
+    ====================== */
+  .angel code {
+  display: block;
+  white-space: pre-wrap;
+  color: white;
+  background-color: black;
+  margin: -75px auto 0px auto;
+  box-sizing: border-box;
+  min-width: 616px;
+  max-width: 616px;
+  border: 2px solid white;
 }
 
 .bio {
-    margin: 100px;    
+  margin: 0px 100px 100px;    
 }
 
 .bio p {
-  background-color: white;
-  padding: 30px;
-  font-size: 150%;
+background-color: white;
+padding: 30px;
+font-size: 150%;
+border: 5px solid black;
 }
 
 .bio_image {
-    border: 5px solid;
-    border-color: white;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.butvi_title {
-  background-image: url("https://i.imgur.com/HtR97hw.jpg");
-  color: black;
-  font-size: 400%;
-  margin: 100px;
-}
-
-.butvi_title p {
-  background-color: white;
-  margin: 5px;
+  border: 5px solid;
+  border-color: white;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-sizing: border-box;
 }
 
 .card_container {
-    margin: 0 0 50px 0;
+  margin: 0 0 50px 0;
 }
 
 .credit_container {
   position: relative;
-  width: 50%;
 }
 
 .credit_container:hover .credit_middle, .credit_container:hover .credit_middle_cards {
   opacity: 1;
 }
 
-.credit_middle {
+.credit_container a:hover{
+  opacity: 1;
+}
+
+.credit_middle, .credit_middle_cards {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   bottom: 0%;
-  margin: 0 0 5px 5px;
   width:100%;
   text-align: center;
 }
 
 .credit_middle_cards {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  bottom: 0%;
   margin: 0 0 5px 10px;
-  width:100%;
-  text-align: center;
 }
 
 .credit_text {
-  background-color: rgba(189, 195, 199, 0.5);
+  background-color: rgba(1, 1, 1, 0.847);
   color: white;
   font-size: 150%;
   padding: 10px;
 }
+
+.credit_text a {
+  color: white;
+}
+
+.credit_text a:visited, .credit_text a:hover {
+  color: rgb(150, 148, 148);
+}
+
 
 .credit_text_card {
   background-color: rgba(0, 0, 0, 0.75);
@@ -118,214 +217,93 @@ header img {
   height: 100%;
 }
 
-.home {
-    background-position: center;
-    background-color: black;
-    background-image: url("images/work1.gif");
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.lima {
-    background-color: #654321;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.lima_1ed{
-    background-image: url("https://i.imgur.com/HtR97hw.jpg");
-    background-position: center;
-    background-repeat: repeat;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.ongoing {
+/* ======================
+   Work
+   ====================== */
+/* .ongoing {
   margin: 100px;
+  text-align: center;
 }
 
 .ongoing img {
   padding: 5px;
-  border: 5px solid;
+  border: 5px solid white;
   width: 100%;
   max-width: 500px;
+  box-sizing: border-box;
 }
 
 .ongoing p {
-  font-size: 400%;
   background-color: white;
-}
+  border: 5px solid black;
+  font-size: 400%;
+} */
 
-.showz {
-  margin: 100px;
+.title_of_work {
+  margin: 100px 100px 0px;
 }
-
-.showz img {
+.title_of_work img {
   padding: 5px;
-  border: 5px solid;
-  width: 100%;
-  max-width: 717px;
+  border: 5px solid white;
+  max-width: 80%;
+  box-sizing: border-box;
+}
+
+.work_title {
+  border: 5px solid #ec722e;
+  margin: 0 50px;
+  text-align: center;
+}
+
+#work_words {
+  background-color: black;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* ======================
+    OTHER SHOWZ
+   ====================== */
+.showz {
+  margin: 100px 100px 0px;
+}
+
+.showz :last-child{
+  margin-bottom: 0px;
+}
+
+.showz img {  
+  padding: 5px;
+  border: 5px solid white;
+  max-width: 80%;
+  box-sizing: border-box;
 }
 
 .showz p {
   font-size: 400%;
   background-color: white;
+  border: 5px solid black;
 }
 
 .showz_email img {
     background-color: black;
-    border-color: white;
-    max-width: none;
-    padding: 0px;
+    border: 2px solid white;
+    max-width: 100%;
+    padding: 5px 20px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
-.warren {
-    background-position: center;
-    background-color: black;
-    background-image: url("https://i.imgur.com/RYYUl86.gif");
-    background-repeat: repeat;
-    background-size: 5%;
-    height: 100%;
-    width: 100%;
-    cursor: url('curs.cur'), progress !important;
-}
-
-.warrenshowz {
-  margin: 100px 0px;
-}
-
-.warrenshowz p {
-  font-size: 400%;
-  background-color: white;
-}
-
-.warrenshowz img {
-    padding: 5px;
-    border: 10px solid;
-    border-color: white;
-    width: 100%;
-    max-width: 900px;
-}
-
-#bottom_img {
-    height: 700px;
-}
-
-#butt {
-  width: 100%;
-  max-width: 500px;
-}
-
-#card_title, #lima_trailer_title {
-    font-size: 200%;
-}
-
-#descrip {
-    padding: 0 200px;
-    color: white;
-    font-size: 150%;
-    text-align: justify;
-}
-
-#fund_container {
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    overflow: hidden;
-    padding: 5px;
-    margin: 50px 0px;
-}
-
-#cards {
-    border-style: solid;
-    border-color: white;
-    border-width: 5px;
-    margin: 0px 5px;
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-#donate {
-    margin: 0px 0px 5px 0px;
-}
-
-#donate_img {
-    height: 200px;
-}
-
- #donate_text {
-        font-size: 175%;
+@media only screen and (max-device-width: 700px) {
+  
+    header code {
+      margin: -150px 0px 10px 0px;
     }
 
-#funder_list {
-    column-count: 2;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .bio {
+      margin: 0px 0px 100px; 
+    }
 
-#fund_l {
-    float: left;
-    width: 66%;
-}
-
-#fund_r {
-    float: left;
-    background-color: white;
-}
-
-#left { position: absolute; left: 0; top: 0; width: 50%; }
-#right { position: absolute; right: 0; top: 0; width: 50%; }
-#left img, #right img{
-  width: 55%;
-  max-width: 500px;
-}
-
-#lima_header {
-    margin: 0 0 0 0;
-    width: 75%;
-}
-
-#lima_poster {
-    margin: 50px 0;
-    width: 50%;
-}
-
-/* cv formatting */
-
-.cv_header {
-  font-size: 150%;
-  padding: 20px;
-}
-
-.cv_list{
-  padding:25px;
-}
-
-.cv_4_cols {
-  float: left;
-  width: 25%;
-}
-
-.cv_item:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cv_4_cols:nth-child(2), .cv_4_cols:nth-child(3) {
-  text-align: center;
-} 
-
-.cv_4_cols:last-child {
-  text-align: right;
-} 
-
-@media only screen and (max-device-width: 700px) { 
     .bio p {
         font-size: 300%;
         padding: 70px;
@@ -334,58 +312,35 @@ header img {
     
     .card_container {
         padding: 0 15px 0 0;
+
     }
     
-    .credit_middle_cards {
+    .credit_middle, .credit_middle_cards {
         opacity: 1;    
     }
     
-    .credit_container {
-        width: 90%;
-    }
-    
     .ongoing {
-        margin: 100px;
+        margin: 100px 0px;
     }
     
     .ongoing img {
-        padding: 5px;
-        border: 5px solid;
-        width: 100%;
-        max-width: 700px;
+        max-width: 1000px;
     }
     
     .ongoing p {
-        font-size: 800%;
+        font-size: 700%;
+    }
+
+    .showz {
+      margin: 100px 0px 0px;
+    }
+
+    .showz img {
+      border: 5px solid white;
+      max-width: 1000px;
     }
     
     .showz p {
         font-size: 700%;
-    }
-    
-    #bottom_img {
-        height: 750px;
-    }
-    
-    #card_title, #lima_trailer_title {
-        font-size: 400%;
-    }
-    
-    #descrip {
-        padding: 0 60px;
-        font-size: 350%;
-    }
-    
-    #donate_text {
-        font-size: 300%;
-    }
-    
-    #lima_header {
-        margin: 50px 10px 0 10px;
-        width: 95%;   
-    }
-    
-    #lima_poster {
-        width: 95%;
     }
 }
