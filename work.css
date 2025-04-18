@@ -53,11 +53,16 @@ header img {
 }
 
 .header_gifs {
-  display: flex; /* Use Flexbox for layout */
-  justify-content: space-between; /* Space out the left and right divs */
-  align-items: flex-start; /* Align items to the top */
-  width: 100%; /* Ensure the container spans the full width */
-  min-width: 816px; /* Match the body's min-width */
+  display: flex;
+  /* Use Flexbox for layout */
+  justify-content: space-between;
+  /* Space out the left and right divs */
+  align-items: flex-start;
+  /* Align items to the top */
+  width: 100%;
+  /* Ensure the container spans the full width */
+  min-width: 816px;
+  /* Match the body's min-width */
   margin-top: -25px;
 }
 
@@ -72,33 +77,44 @@ footer {
 }
 
 /* Flexbox container for the header GIFs */
-#left, #right {
-  flex: 1; /* Each div takes up equal space */
-  min-width: 408px; /* Set the minimum width for each div */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
+#left,
+#right {
+  flex: 1;
+  /* Each div takes up equal space */
+  min-width: 408px;
+  /* Set the minimum width for each div */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width */
 }
 
 #right {
   text-align: right;
 }
 
-#left img, #right img {
-  max-width: 60%; /* Ensure images don't exceed their container's width */
-  height: auto; /* Maintain aspect ratio */
+#left img,
+#right img {
+  max-width: 60%;
+  /* Ensure images don't exceed their container's width */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 #bottom {
-  clear: both; /* Ensure the bottom div clears the floated elements above */
+  clear: both;
+  /* Ensure the bottom div clears the floated elements above */
   width: 100%;
 }
 
 #bottom span {
-  display: inline-block; /* Ensure spans behave as blocks */
-  width: 50%; /* Each span takes up half the width */
+  display: inline-block;
+  /* Ensure spans behave as blocks */
+  width: 50%;
+  /* Each span takes up half the width */
 }
 
 #bottom img {
-  max-width: 100%; /* Ensure images don't exceed their container's width */
+  max-width: 100%;
+  /* Ensure images don't exceed their container's width */
 }
 
 #butt {
@@ -109,7 +125,7 @@ footer {
 /* ======================
     BIO
     ====================== */
-  .angel code {
+.angel code {
   display: block;
   white-space: pre-wrap;
   color: white;
@@ -122,14 +138,14 @@ footer {
 }
 
 .bio {
-  margin: 0px 100px 100px;    
+  margin: 0px 100px 100px;
 }
 
 .bio p {
-background-color: white;
-padding: 30px;
-font-size: 150%;
-border: 5px solid black;
+  background-color: white;
+  padding: 30px;
+  font-size: 150%;
+  border: 5px solid black;
 }
 
 .bio_image {
@@ -152,20 +168,22 @@ border: 5px solid black;
   position: relative;
 }
 
-.credit_container:hover .credit_middle, .credit_container:hover .credit_middle_cards {
+.credit_container:hover .credit_middle,
+.credit_container:hover .credit_middle_cards {
   opacity: 1;
 }
 
-.credit_container a:hover{
+.credit_container a:hover {
   opacity: 1;
 }
 
-.credit_middle, .credit_middle_cards {
+.credit_middle,
+.credit_middle_cards {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
   bottom: 0%;
-  width:100%;
+  width: 100%;
   text-align: center;
 }
 
@@ -184,7 +202,8 @@ border: 5px solid black;
   color: white;
 }
 
-.credit_text a:visited, .credit_text a:hover {
+.credit_text a:visited,
+.credit_text a:hover {
   color: rgb(150, 148, 148);
 }
 
@@ -206,7 +225,7 @@ border: 5px solid black;
   overflow: hidden;
   margin: 0;
 }
-		
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -242,6 +261,7 @@ border: 5px solid black;
 .title_of_work {
   margin: 100px 100px 0px;
 }
+
 .title_of_work img {
   padding: 5px;
   border: 5px solid white;
@@ -268,11 +288,11 @@ border: 5px solid black;
   margin: 100px 100px 0px;
 }
 
-.showz :last-child{
+.showz :last-child {
   margin-bottom: 0px;
 }
 
-.showz img {  
+.showz img {
   padding: 5px;
   border: 5px solid white;
   max-width: 80%;
@@ -286,61 +306,62 @@ border: 5px solid black;
 }
 
 .showz_email img {
-    background-color: black;
-    border: 2px solid white;
-    max-width: 100%;
-    padding: 5px 20px;
-    margin: 0px;
-    box-sizing: border-box;
+  background-color: black;
+  border: 2px solid white;
+  max-width: 100%;
+  padding: 5px 20px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-device-width: 700px) {
-  
-    header code {
-      margin: -150px 0px 10px 0px;
-    }
 
-    .bio {
-      margin: 0px 0px 100px; 
-    }
+  header code {
+    margin: -150px 0px 10px 0px;
+  }
 
-    .bio p {
-        font-size: 300%;
-        padding: 70px;
-        text-align: justify;
-    }
-    
-    .card_container {
-        padding: 0 15px 0 0;
+  .bio {
+    margin: 0px 0px 100px;
+  }
 
-    }
-    
-    .credit_middle, .credit_middle_cards {
-        opacity: 1;    
-    }
-    
-    .ongoing {
-        margin: 100px 0px;
-    }
-    
-    .ongoing img {
-        max-width: 1000px;
-    }
-    
-    .ongoing p {
-        font-size: 700%;
-    }
+  .bio p {
+    font-size: 300%;
+    padding: 70px;
+    text-align: justify;
+  }
 
-    .showz {
-      margin: 100px 0px 0px;
-    }
+  .card_container {
+    padding: 0 15px 0 0;
 
-    .showz img {
-      border: 5px solid white;
-      max-width: 1000px;
-    }
-    
-    .showz p {
-        font-size: 700%;
-    }
+  }
+
+  .credit_middle,
+  .credit_middle_cards {
+    opacity: 1;
+  }
+
+  .ongoing {
+    margin: 100px 0px;
+  }
+
+  .ongoing img {
+    max-width: 1000px;
+  }
+
+  .ongoing p {
+    font-size: 700%;
+  }
+
+  .showz {
+    margin: 100px 0px 0px;
+  }
+
+  .showz img {
+    border: 5px solid white;
+    max-width: 1000px;
+  }
+
+  .showz p {
+    font-size: 700%;
+  }
 }
