@@ -30,6 +30,12 @@ header a {
     border: 5px solid black;
 }
 
+#amerishowz_banner {
+    background-color: white;
+}
+
 #amerishowz_banner img {
+    box-sizing: border-box;
     width: 100%;
+    padding: 10px;
 }
