@@ -29,3 +29,7 @@ header a {
     font-size: 150%;
     border: 5px solid black;
 }
+
+#amerishowz_banner img {
+    width: 100%;
+}
