@@ -315,10 +315,14 @@ footer {
   box-sizing: border-box;
 }
 
-@media only screen and (max-device-width: 700px) {
+@media screen and (max-width: 700px) {
 
   header code {
     margin: -150px 0px 10px 0px;
+  }
+
+  body {
+    min-width: 0px;
   }
 
   .bio {
@@ -326,7 +330,7 @@ footer {
   }
 
   .bio p {
-    font-size: 300%;
+    font-size: 200%;
     padding: 70px;
     text-align: justify;
   }
@@ -363,6 +367,16 @@ footer {
   }
 
   .showz p {
-    font-size: 700%;
+    font-size: 300%;
+  }
+
+  #left,
+  #right {
+    flex: 1;
+    /* Each div takes up equal space */
+    min-width: 100px;
+    /* Set the minimum width for each div */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
   }
 }
