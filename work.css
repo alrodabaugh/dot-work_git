@@ -325,6 +325,14 @@ footer {
     min-width: 0px;
   }
 
+  footer {
+    min-width: 0px;
+  }
+
+  .header_gifs {
+    min-width: 0px;
+  }
+
   .bio {
     margin: 0px 0px 100px;
   }
@@ -349,21 +357,17 @@ footer {
     margin: 100px 0px;
   }
 
-  .ongoing img {
-    max-width: 1000px;
-  }
-
   .ongoing p {
     font-size: 700%;
   }
 
-  .showz {
+  .showz,
+  .title_of_work {
     margin: 100px 0px 0px;
   }
 
   .showz img {
     border: 5px solid white;
-    max-width: 1000px;
   }
 
   .showz p {
@@ -372,11 +376,9 @@ footer {
 
   #left,
   #right {
-    flex: 1;
-    /* Each div takes up equal space */
-    min-width: 100px;
-    /* Set the minimum width for each div */
-    box-sizing: border-box;
-    /* Include padding and border in the element's total width */
+    min-width: 0px;
   }
+
 }
+
+@media screen and (max-width: 500px) {}
