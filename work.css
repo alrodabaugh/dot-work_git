@@ -35,16 +35,17 @@ body {
 /* ======================
    Header
    ====================== */
-header code {
-  display: block;
-  white-space: pre-wrap;
-  color: white;
+header pre {
   background-color: black;
-  margin: -150px 50px 10px 50px;
-  box-sizing: border-box;
-  text-align: center;
-  min-width: 616px;
   border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  margin: -150px 50px 10px 50px;
+  min-width: 616px;
+  padding-top: 20px;
+  text-align: center;
+  white-space: pre-wrap;
 }
 
 header img {
@@ -125,12 +126,12 @@ footer {
 /* ======================
     BIO
     ====================== */
-.angel code {
+.angel pre {
   display: block;
   white-space: pre-wrap;
   color: white;
   background-color: black;
-  margin: -75px auto 0px auto;
+  margin: -75px auto 0px;
   box-sizing: border-box;
   min-width: 616px;
   max-width: 616px;
@@ -325,6 +326,12 @@ footer {
     min-width: 0px;
   }
 
+  header pre {
+    font-size: 10%;
+    margin: -50px 0px 10px;
+    min-width: 0;
+  }
+
   footer {
     min-width: 0px;
   }
@@ -333,13 +340,19 @@ footer {
     min-width: 0px;
   }
 
+  .angel pre {
+    font-size: 80%;
+    min-width: 0px;
+    width: 500px;
+    margin: -75px auto 0px;
+  }
+
   .bio {
     margin: 0px 0px 100px;
   }
 
   .bio p {
-    font-size: 200%;
-    padding: 70px;
+    padding: 20px;
     text-align: justify;
   }
 
@@ -363,15 +376,20 @@ footer {
 
   .showz,
   .title_of_work {
-    margin: 100px 0px 0px;
+    margin: 25px 0px 0px;
+  }
+
+  .showz img,
+  .title_of_work img {
+    max-width: 100%;
   }
 
   .showz img {
     border: 5px solid white;
   }
 
-  .showz p {
-    font-size: 300%;
+  .work_banner {
+    margin: 50px 0px 0px;
   }
 
   #left,
@@ -381,4 +399,11 @@ footer {
 
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+
+  header pre {
+    min-width: 0;
+  }
+  
+
+}
