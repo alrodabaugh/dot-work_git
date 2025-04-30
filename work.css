@@ -326,8 +326,12 @@ footer {
     min-width: 0px;
   }
 
+  header {
+    margin-top: -90px;
+  }
+
   header pre {
-    font-size: 10%;
+    font-size: 7pt;
     margin: -50px 0px 10px;
     min-width: 0;
   }
@@ -402,8 +406,24 @@ footer {
 @media screen and (max-width: 500px) {
 
   header pre {
-    min-width: 0;
+    font-size: 5pt;
+    margin: 20px 0px 0px;
   }
-  
 
+  .header_gifs {
+    margin: 0px;
+  }
+
+  .angel pre {
+    font-size: 6pt;
+    min-width: 0px;
+    width: 375px;
+    margin: -75px auto 0px;
+  }
+
+  #work_words img {
+    width: 375px;
+  }
 }
+
+@media screen and (max-width: 375px) {}
