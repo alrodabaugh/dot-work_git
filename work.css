@@ -2,6 +2,10 @@
    Body
    ====================== */
 
+html {
+  min-width: 375px;
+}
+
 a:hover {
   opacity: 0.3;
   filter: alpha(opacity=30);
