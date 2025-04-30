@@ -39,3 +39,35 @@ header a {
     width: 100%;
     padding: 10px;
 }
+
+@media screen and (max-width: 700px) {
+    .work_banner {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .work_descrip {
+        width: 100%;
+    }
+
+    .work_descrip p {
+        padding: 30px;
+        font-size: 150%;
+    }
+
+    .showz p {
+        font-size: 300%;
+    }
+
+    .showz_landing {
+        margin: 50px 0px 0px;
+    }
+
+    .showz_landing img {
+        max-width: 100%;
+    }
+
+    #work_words img {
+        width: 100%
+    }
+}

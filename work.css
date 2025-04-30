@@ -411,7 +411,7 @@ footer {
 
   header pre {
     font-size: 5pt;
-    margin: 20px 0px 0px;
+    margin: 20px 0px 10px;
   }
 
   .header_gifs {
@@ -423,6 +423,10 @@ footer {
     min-width: 0px;
     width: 375px;
     margin: -75px auto 0px;
+  }
+
+  .credit_text {
+    font-size: 100%;
   }
 
   #work_words img {
