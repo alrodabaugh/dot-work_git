@@ -1,8 +1,16 @@
-h1, h2, h2 a, h3, h3 a, h4, h4 a {
+h1,
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a {
     color: white;
 }
 
-h2 a:visted, h3 a:visited, h4 a:visited {
+h2 a:visted,
+h3 a:visited,
+h4 a:visited {
     color: grey;
 }
 
@@ -23,7 +31,7 @@ h2 a:visted, h3 a:visited, h4 a:visited {
     cursor: url('curs.cur'), progress !important;
 }
 
-.lima_1ed{
+.lima_1ed {
     background-image: url("https://i.imgur.com/HtR97hw.jpg");
     background-position: center;
     background-repeat: repeat;
@@ -58,7 +66,8 @@ h2 a:visted, h3 a:visited, h4 a:visited {
     max-width: 900px;
 }
 
-#card_title, #lima_trailer_title {
+#card_title,
+#lima_trailer_title {
     font-size: 200%;
 }
 
@@ -100,7 +109,7 @@ h2 a:visted, h3 a:visited, h4 a:visited {
 }
 
 #donate_text {
-        font-size: 175%;
+    font-size: 175%;
 }
 
 #funder_list {
@@ -132,56 +141,58 @@ h2 a:visted, h3 a:visited, h4 a:visited {
 /* cv formatting */
 
 .cv_header {
-  font-size: 150%;
-  padding: 20px;
+    font-size: 150%;
+    padding: 20px;
 }
 
-.cv_list{
-  padding:25px;
+.cv_list {
+    padding: 25px;
 }
 
 .cv_4_cols {
-  float: left;
-  width: 25%;
+    float: left;
+    width: 25%;
 }
 
 .cv_item:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.cv_4_cols:nth-child(2), .cv_4_cols:nth-child(3) {
-  text-align: center;
-} 
+.cv_4_cols:nth-child(2),
+.cv_4_cols:nth-child(3) {
+    text-align: center;
+}
 
 .cv_4_cols:last-child {
-  text-align: right;
+    text-align: right;
 }
 
 @media only screen and (max-device-width: 700px) {
     #bottom_img {
         height: 750px;
     }
-    
-    #card_title, #lima_trailer_title {
+
+    #card_title,
+    #lima_trailer_title {
         font-size: 400%;
     }
-    
+
     #descrip {
         padding: 0 60px;
         font-size: 350%;
     }
-    
+
     #donate_text {
         font-size: 300%;
     }
-    
+
     #lima_header {
         margin: 50px 10px 0 10px;
-        width: 95%;   
+        width: 95%;
     }
-    
+
     #lima_poster {
         width: 95%;
     }

@@ -1,0 +1,73 @@
+header a {
+    color: black;
+}
+
+.showz_landing {
+    margin: 50px 100px 0px;
+}
+
+.showz_landing img {
+    padding: 5px;
+    border: 5px solid white;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
+.work_banner {
+    margin: 50px auto 0px;
+    width: 85%;
+}
+
+.work_descrip {
+    margin: 50px auto 0px;
+    width: 80%;
+}
+
+.work_descrip p {
+    background-color: white;
+    padding: 30px;
+    font-size: 150%;
+    border: 5px solid black;
+}
+
+#amerishowz_banner {
+    background-color: white;
+}
+
+#amerishowz_banner img {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .work_banner {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .work_descrip {
+        width: 100%;
+    }
+
+    .work_descrip p {
+        padding: 30px;
+        font-size: 150%;
+    }
+
+    .showz p {
+        font-size: 300%;
+    }
+
+    .showz_landing {
+        margin: 50px 0px 0px;
+    }
+
+    .showz_landing img {
+        max-width: 100%;
+    }
+
+    #work_words img {
+        width: 100%
+    }
+}
