@@ -21,15 +21,60 @@ header a {
 .lima {
     background-image: url("https://i.imgur.com/HtR97hw.jpg");
     cursor: url('curs.cur'), progress !important;
+    margin: 100px;
 }
 
 header pre {
-    margin: 10px 50px 10px 50px;
+    margin: -150px 50px 10px 50px;
+}
+
+.header_gifs {
+    margin-top: 0px;
 }
 
 .credit_container {
     position: relative;
     width: 50%;
+}
+
+.butvi_links {
+    background-color: #654321;
+    padding: 25px 50px;
+    color: white;
+    font-size: 160%;
+    text-align: justify;
+}
+
+.links_container {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    overflow: hidden;
+    padding: 5px;
+    margin: 0px;
+}
+
+.link_outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.link_inner-grid {
+    flex: 100%;
+    max-width: 45%;
+
+}
+
+.link_inner-grid img {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 25px;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
 #bottom_img {
@@ -58,7 +103,7 @@ header pre {
     background-color: #654321;
     padding: 50px 100px;
     color: white;
-    font-size: 200%;
+    font-size: 175%;
     text-align: justify;
 }
 
@@ -80,7 +125,7 @@ header pre {
     border-width: 5px;
     overflow: hidden;
     padding: 5px;
-    margin: 50px 50px;
+    margin: 10px 50px;
 }
 
 #fund_l {
@@ -113,8 +158,17 @@ header pre {
 
     header pre {
         font-size: 7pt;
-        margin: 100px 0px 10px;
+        margin: -125px 0px 10px;
         min-width: 0;
+    }
+
+    .lima {
+        margin: 0px;
+    }
+
+    #descrip {
+        font-size: 150%;
+        padding: 10px 50px;
     }
 
 }
@@ -122,7 +176,24 @@ header pre {
 @media screen and (max-width: 500px) {
     header pre {
         font-size: 5pt;
-        margin: 100px 0px 10px;
+        margin: -100px 0px 10px;
+    }
+
+    .butvi_links {
+        padding: 25px 10px;
+        font-size: 110%;
+
+    }
+
+
+    #descrip {
+        font-size: 125%;
+        padding: 10px 10px;
+    }
+
+    #fund_container {
+        padding: 5px;
+        margin: 5px 5px;
     }
 
 }
