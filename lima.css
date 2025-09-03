@@ -19,9 +19,26 @@ header a {
 }
 
 .lima {
-    background-image: url("https://i.imgur.com/HtR97hw.jpg");
+    background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-w2HpLDK/0/NfCT2RLG6NVFnkQrXsZrTMLxxZFzBwmdHNsLm4gZZ/L/camo_original-L.jpg");
     cursor: url('curs.cur'), progress !important;
-    margin: 100px;
+    margin: 0px;
+}
+
+.lima_1ed {
+    background-image:
+        /* reversed */
+        url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-g7HmjjT/0/K7L5GvDZSvZ8d7KnGDD8WFkkBT4G94hbP4gxRGkzp/XL/flame_vid_reverse-XL.gif"),
+        /* normal */
+        url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-DrN7vVJ/0/NSDjPnTWfbqcXRrTQgL3nr74s28Wp7f723R9q3mxv/XL/flame_vid_14mb-XL.gif");
+    background-repeat: no-repeat, repeat;
+    background-size: 50%, 50%;
+    background-attachment: fixed;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.lima_1ed header pre {
+    margin-top: 50px;
+    opacity: 80%;
 }
 
 header pre {
@@ -35,6 +52,18 @@ header pre {
 .credit_container {
     position: relative;
     width: 50%;
+}
+
+.butvi_title {
+    color: black;
+    font-size: 300%;
+    margin: 25px 100px;
+}
+
+.butvi_title p {
+    background-color: white;
+    margin: 5px;
+    text-align: center;
 }
 
 .butvi_links {
