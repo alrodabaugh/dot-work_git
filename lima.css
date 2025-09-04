@@ -18,6 +18,10 @@ header a {
     color: black;
 }
 
+body {
+    min-width: 0px;
+}
+
 .lima {
     background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-w2HpLDK/0/NfCT2RLG6NVFnkQrXsZrTMLxxZFzBwmdHNsLm4gZZ/L/camo_original-L.jpg");
     cursor: url('curs.cur'), progress !important;
@@ -30,7 +34,7 @@ header a {
         url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-g7HmjjT/0/K7L5GvDZSvZ8d7KnGDD8WFkkBT4G94hbP4gxRGkzp/XL/flame_vid_reverse-XL.gif"),
         /* normal */
         url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-DrN7vVJ/0/NSDjPnTWfbqcXRrTQgL3nr74s28Wp7f723R9q3mxv/XL/flame_vid_14mb-XL.gif");
-    background-repeat: no-repeat, repeat;
+    background-repeat: repeat-y, repeat;
     background-size: 50%, 50%;
     background-attachment: fixed;
     cursor: url('curs.cur'), progress !important;
@@ -38,7 +42,7 @@ header a {
 
 .lima_1ed header pre {
     margin-top: 50px;
-    opacity: 80%;
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 header pre {
@@ -49,21 +53,18 @@ header pre {
     margin-top: 0px;
 }
 
-.credit_container {
-    position: relative;
-    width: 50%;
-}
-
 .butvi_title {
+    background-color: white;
+    box-sizing: border-box;
     color: black;
     font-size: 300%;
-    margin: 25px 100px;
+    margin: 100px 100px;
+    padding: 10px;
+    text-align: center;
 }
 
 .butvi_title p {
-    background-color: white;
-    margin: 5px;
-    text-align: center;
+    margin: 10px;
 }
 
 .butvi_links {
@@ -83,7 +84,81 @@ header pre {
     margin: 0px;
 }
 
-.link_outer-grid {
+/* cards and artist credit */
+
+
+.credit_container {
+    position: relative;
+}
+
+.credit_container:hover .credit_middle,
+.credit_container:hover .credit_middle_cards {
+    opacity: 1;
+}
+
+.credit_container a:hover {
+    opacity: 1;
+}
+
+.credit_middle,
+.credit_middle_cards {
+    box-sizing: border-box;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.credit_text {
+    background-color: rgba(1, 1, 1, 0.847);
+    color: white;
+    font-size: 150%;
+}
+
+.credit_text a {
+    color: white;
+}
+
+.credit_text a:visited,
+.credit_text a:hover {
+    color: rgb(150, 148, 148);
+}
+
+
+.credit_text_card {
+    background-color: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    color: white;
+    font-size: 100%;
+    margin: 0 5px 9px 5px;
+}
+
+.credit_text_card a {
+    color: white;
+}
+
+/* embedding video */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.outer-grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -93,7 +168,11 @@ header pre {
 .link_inner-grid {
     flex: 100%;
     max-width: 45%;
+}
 
+.cards_inner-grid {
+    flex: 100%;
+    max-width: 33%;
 }
 
 .link_inner-grid img {
@@ -107,23 +186,27 @@ header pre {
 }
 
 #bottom_img {
-    height: 700px;
+    width: 100%;
 }
 
-#card_title,
-#lima_trailer_title {
+#card_title {
     font-size: 200%;
+    text-align: center;
+    background-color: white;
+}
+
+#card_title p {
+    margin: 0 0 5px 0;
+    padding: 5px;
 }
 
 #cards {
+    box-sizing: border-box;
     border-style: solid;
     border-color: white;
     border-width: 5px;
-    margin: 0px 5px;
     opacity: 1;
-    display: block;
     width: 100%;
-    height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
 }
@@ -179,16 +262,58 @@ header pre {
 }
 
 #lima_poster {
-    margin: 50px 0;
-    width: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    width: 40%;
 }
 
-@media screen and (max-width: 700px) {
+#lima_poster img {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+}
+
+#lima_poster p {
+    background-color: white;
+    font-size: 200%;
+    margin: 0px;
+    text-align: center;
+}
+
+#watch {
+    background-color: white;
+    font-size: 200%;
+    margin: 0px;
+    text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+
+    header {
+        margin-top: 0px;
+    }
 
     header pre {
         font-size: 7pt;
         margin: -125px 0px 10px;
         min-width: 0;
+    }
+
+    .butvi_title {
+        font-size: 175%;
+        margin: 50px 50px;
+        padding: 5px;
+    }
+
+    .cards_inner-grid {
+        max-width: 45%;
     }
 
     .lima {
@@ -200,20 +325,50 @@ header pre {
         padding: 10px 50px;
     }
 
+    #lima_poster {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
+
+    .lima_1ed header pre {
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.2)
+    }
+
     header pre {
         font-size: 5pt;
-        margin: -100px 0px 10px;
+        margin: 0px 0px 10px;
+    }
+
+    .butvi_title {
+        font-size: 150%;
+        margin: 25px 50px;
+        padding: 5px;
     }
 
     .butvi_links {
         padding: 25px 10px;
         font-size: 110%;
-
     }
 
+    .cards_inner-grid {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .cards_inner-grid:last-child {
+        margin-bottom: 15px;
+    }
+
+    #card_title {
+        font-size: 145%;
+    }
 
     #descrip {
         font-size: 125%;
@@ -223,6 +378,25 @@ header pre {
     #fund_container {
         padding: 5px;
         margin: 5px 5px;
+    }
+
+    #lima_poster {
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        width: 80%;
+    }
+
+    #lima_poster p {
+        background-color: white;
+        font-size: 150%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #watch {
+        font-size: 150%;
     }
 
 }

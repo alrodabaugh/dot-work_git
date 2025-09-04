@@ -165,82 +165,6 @@ footer {
   box-sizing: border-box;
 }
 
-.card_container {
-  margin: 0 0 50px 0;
-}
-
-.credit_container {
-  position: relative;
-}
-
-.credit_container:hover .credit_middle,
-.credit_container:hover .credit_middle_cards {
-  opacity: 1;
-}
-
-.credit_container a:hover {
-  opacity: 1;
-}
-
-.credit_middle,
-.credit_middle_cards {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  text-align: center;
-}
-
-.credit_middle_cards {
-  margin: 0 0 5px 10px;
-}
-
-.credit_text {
-  background-color: rgba(1, 1, 1, 0.847);
-  color: white;
-  font-size: 150%;
-  padding: 10px;
-}
-
-.credit_text a {
-  color: white;
-}
-
-.credit_text a:visited,
-.credit_text a:hover {
-  color: rgb(150, 148, 148);
-}
-
-
-.credit_text_card {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
-  font-size: 150%;
-  padding: 10px;
-}
-
-.credit_text_card a {
-  color: white;
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  margin: 0;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* ======================
    Work
    ====================== */
@@ -358,24 +282,6 @@ footer {
   .bio p {
     padding: 20px;
     text-align: justify;
-  }
-
-  .card_container {
-    padding: 0 15px 0 0;
-
-  }
-
-  .credit_middle,
-  .credit_middle_cards {
-    opacity: 1;
-  }
-
-  .ongoing {
-    margin: 100px 0px;
-  }
-
-  .ongoing p {
-    font-size: 700%;
   }
 
   .showz,
