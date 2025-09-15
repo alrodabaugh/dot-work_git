@@ -201,7 +201,7 @@ header pre {
 
 .cards_inner-grid {
     flex: 100%;
-    max-width: 33%;
+    max-width: 19%;
 }
 
 .images_inner-grid img,
@@ -334,7 +334,7 @@ header pre {
     }
 
     .cards_inner-grid {
-        max-width: 45%;
+        max-width: 24%;
     }
 
     .images_inner-grid {
@@ -384,7 +384,7 @@ header pre {
     }
 
     .cards_inner-grid {
-        max-width: 90%;
+        max-width: 49%;
         margin-top: 20px;
     }
 
