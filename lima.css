@@ -72,7 +72,29 @@ header pre {
     padding: 25px 50px;
     color: white;
     font-size: 160%;
-    text-align: justify;
+    text-align: center;
+}
+
+.butvi_home_button {
+    background-color: #654321;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    color: white;
+    font-size: 300%;
+    margin: 0 auto 100px;
+    padding: 25px 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.butvi_home_button a {
+    color: white;
+    text-decoration: none;
+}
+
+.butvi_home_button a:visited {
+    color: dark grey;
 }
 
 .links_container {
@@ -139,6 +161,20 @@ header pre {
     color: white;
 }
 
+.descrip_butvi1 {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    opacity: .7;
+    padding: 10px 100px;
+    text-align: justify;
+    margin: 0px;
+}
+
+.descrip_butvi1+.descrip_butvi1 {
+    text-indent: 60px;
+}
+
 /* embedding video */
 
 .embed-container {
@@ -165,18 +201,31 @@ header pre {
     border-width: 5px;
     overflow: hidden;
     padding: 5px;
-    margin: 10px 50px;
+    margin: 10px 150px;
 }
 
 .images_container {
+    position: relative;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
-.outer-grid {
+.cards_outer-grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 0px;
+}
+
+.current_edition {
+    filter: invert(100%);
+}
+
+.image_descrip {
+    background-color: black;
+    color: white;
+    margin: 0px;
 }
 
 .images_outer-grid {
@@ -185,13 +234,22 @@ header pre {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 600px;
-    overflow: auto;
+    height: 700px;
+    overflow: overlay;
+    padding-bottom: 50px;
 }
 
 .link_inner-grid {
     flex: 100%;
-    max-width: 45%;
+    max-width: 22%;
+}
+
+.links_outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 150px 50px;
 }
 
 .images_inner-grid {
@@ -217,6 +275,15 @@ header pre {
 
 #bottom_img {
     width: 100%;
+}
+
+#butvi_links_1 {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    opacity: .7;
+    padding: 10px 100px;
+    text-align: center;
 }
 
 #card_title {
@@ -308,10 +375,22 @@ header pre {
     text-align: center;
 }
 
+#scroll {
+    bottom: 0;
+    background-color: white;
+    font-size: 150%;
+    margin: 5px 5px 20px;
+    opacity: .8;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
 #watch {
     background-color: white;
     font-size: 200%;
     margin: 0px;
+    padding: 5px;
     text-align: center;
 }
 

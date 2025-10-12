@@ -49,6 +49,7 @@ header pre {
   min-width: 616px;
   padding-top: 20px;
   text-align: center;
+  text-decoration: none;
   white-space: pre-wrap;
 }
 
