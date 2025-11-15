@@ -22,7 +22,7 @@ header a {
 }
 
 body {
-    min-width: 500px;
+    min-width: 400px;
 }
 
 .lima,
@@ -57,8 +57,6 @@ header pre {
 .lima_hold header pre {
     margin: 50px 50px 10px 50px;
 }
-
-.lima_1ed header pre a {}
 
 .header_gifs {
     margin-top: 0px;
