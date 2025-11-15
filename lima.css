@@ -1,4 +1,7 @@
-h1,
+h1 {
+    color: black
+}
+
 h2,
 h2 a,
 h3,
@@ -19,10 +22,11 @@ header a {
 }
 
 body {
-    min-width: 0px;
+    min-width: 500px;
 }
 
-.lima {
+.lima,
+.lima_hold {
     background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-w2HpLDK/0/NfCT2RLG6NVFnkQrXsZrTMLxxZFzBwmdHNsLm4gZZ/L/camo_original-L.jpg");
     cursor: url('curs.cur'), progress !important;
     margin: 0px;
@@ -42,12 +46,19 @@ body {
 
 .lima_1ed header pre {
     margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
 }
 
 header pre {
     margin: -150px 50px 10px 50px;
 }
+
+.lima_hold header pre {
+    margin: 50px 50px 10px 50px;
+}
+
+.lima_1ed header pre a {}
 
 .header_gifs {
     margin-top: 0px;
@@ -273,8 +284,15 @@ header pre {
     box-sizing: border-box;
 }
 
+#held_ed {
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 #bottom_img {
-    width: 100%;
+    width: 95%;
+    margin-bottom: 50px;
 }
 
 #butvi_links_1 {
@@ -394,6 +412,31 @@ header pre {
     text-align: center;
 }
 
+@media screen and (max-width: 850px) {
+
+    .fund_container {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+
+    .images_container {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+
+    .links_outer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px 50px 50px;
+    }
+
+    #lima_poster {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 786px) {
 
     header {
@@ -416,9 +459,14 @@ header pre {
         max-width: 24%;
     }
 
+    .images_container {
+        padding: 5px;
+        margin: 5px 60px;
+    }
+
     .images_inner-grid {
         flex: 100%;
-        max-width: 100%;
+        max-width: 75%;
     }
 
     .lima {
@@ -465,10 +513,15 @@ header pre {
     .cards_inner-grid {
         max-width: 49%;
         margin-top: 20px;
+        padding: none;
     }
 
     .cards_inner-grid:last-child {
         margin-bottom: 15px;
+    }
+
+    .descrip_butvi1 {
+        padding: 10px 20px;
     }
 
     .fund_container {
@@ -477,7 +530,20 @@ header pre {
     }
 
     .images_container {
-        margin: 10px 0 0 0;
+        margin: 10px 50px 0 50px;
+    }
+
+    .images_inner-grid {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .links_outer-grid {
+        margin: 0px 0 50px;
+    }
+
+    #butvi_links_1 {
+        padding: 10px 10px;
     }
 
     #card_title {
