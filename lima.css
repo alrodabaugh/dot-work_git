@@ -1,16 +1,577 @@
+h1 {
+    color: black
+}
+
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a {
+    color: white;
+}
+
+h2 a:visited,
+h3 a:visited,
+h4 a:visited {
+    color: grey;
+}
+
 header a {
     color: black;
 }
 
-.lima header code {
-    margin: 10px 50px 10px 50px;
+body {
+    min-width: 500px;
 }
 
-#bottom_img {
-    height: 700px;
+.lima,
+.lima_hold {
+    background-image: url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-w2HpLDK/0/NfCT2RLG6NVFnkQrXsZrTMLxxZFzBwmdHNsLm4gZZ/L/camo_original-L.jpg");
+    cursor: url('curs.cur'), progress !important;
+    margin: 0px;
 }
+
+.lima_1ed {
+    background-image:
+        /* reversed */
+        url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-g7HmjjT/0/K7L5GvDZSvZ8d7KnGDD8WFkkBT4G94hbP4gxRGkzp/XL/flame_vid_reverse-XL.gif"),
+        /* normal */
+        url("https://photos.smugmug.com/Alexs-Images/Alexrodabaughwork/i-DrN7vVJ/0/NSDjPnTWfbqcXRrTQgL3nr74s28Wp7f723R9q3mxv/XL/flame_vid_14mb-XL.gif");
+    background-repeat: repeat-y, repeat;
+    background-size: 50%, 50%;
+    background-attachment: fixed;
+    cursor: url('curs.cur'), progress !important;
+}
+
+.lima_1ed header pre {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+header pre {
+    margin: -150px 50px 10px 50px;
+}
+
+.lima_hold header pre {
+    margin: 50px 50px 10px 50px;
+}
+
+.lima_1ed header pre a {}
+
+.header_gifs {
+    margin-top: 0px;
+}
+
+.butvi_title {
+    background-color: white;
+    box-sizing: border-box;
+    color: black;
+    font-size: 300%;
+    margin: 100px 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.butvi_title p {
+    margin: 10px;
+}
+
+.butvi_links {
+    background-color: #654321;
+    padding: 25px 50px;
+    color: white;
+    font-size: 160%;
+    text-align: center;
+}
+
+.butvi_home_button {
+    background-color: #654321;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    color: white;
+    font-size: 300%;
+    margin: 0 auto 100px;
+    padding: 25px 50px;
+    text-align: center;
+    width: 300px;
+}
+
+.butvi_home_button a {
+    color: white;
+    text-decoration: none;
+}
+
+.butvi_home_button a:visited {
+    color: dark grey;
+}
+
+.links_container {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    overflow: hidden;
+    padding: 5px;
+    margin: 0px;
+}
+
+/* cards and artist credit */
+
 
 .credit_container {
     position: relative;
-    width: 50%;
+}
+
+.credit_container:hover .credit_middle,
+.credit_container:hover .credit_middle_cards {
+    opacity: 1;
+}
+
+.credit_container a:hover {
+    opacity: 1;
+}
+
+.credit_middle,
+.credit_middle_cards {
+    box-sizing: border-box;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+}
+
+.credit_text {
+    background-color: rgba(1, 1, 1, 0.847);
+    color: white;
+    font-size: 150%;
+}
+
+.credit_text a {
+    color: white;
+}
+
+.credit_text a:visited,
+.credit_text a:hover {
+    color: rgb(150, 148, 148);
+}
+
+
+.credit_text_card {
+    background-color: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    color: white;
+    font-size: 100%;
+    margin: 0 5px 9px 5px;
+}
+
+.credit_text_card a {
+    color: white;
+}
+
+.descrip_butvi1 {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    opacity: .7;
+    padding: 10px 100px;
+    text-align: justify;
+    margin: 0px;
+}
+
+.descrip_butvi1+.descrip_butvi1 {
+    text-indent: 60px;
+}
+
+/* embedding video */
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fund_container,
+.images_container {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    overflow: hidden;
+    padding: 5px;
+    margin: 10px 150px;
+}
+
+.images_container {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.cards_outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+}
+
+.current_edition {
+    filter: invert(100%);
+}
+
+.image_descrip {
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+
+.images_outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 700px;
+    overflow: overlay;
+    padding-bottom: 50px;
+}
+
+.link_inner-grid {
+    flex: 100%;
+    max-width: 22%;
+}
+
+.links_outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px 150px 50px;
+}
+
+.images_inner-grid {
+    flex: 100%;
+    max-width: 49%;
+}
+
+.cards_inner-grid {
+    flex: 100%;
+    max-width: 19%;
+}
+
+.images_inner-grid img,
+.link_inner-grid img {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 25px;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#held_ed {
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#bottom_img {
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+#butvi_links_1 {
+    background-color: black;
+    color: white;
+    font-size: 150%;
+    opacity: .7;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+#card_title {
+    font-size: 200%;
+    text-align: center;
+    background-color: white;
+}
+
+#card_title p {
+    margin: 0 0 5px 0;
+    padding: 5px;
+}
+
+#cards {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#descrip {
+    background-color: #654321;
+    padding: 50px 100px;
+    color: white;
+    font-size: 175%;
+    text-align: justify;
+}
+
+#donate {
+    margin: 0px 0px 5px 0px;
+}
+
+#donate_img {
+    height: 200px;
+}
+
+#donate_text {
+    font-size: 175%;
+}
+
+#fund_l {
+    float: left;
+    width: 66%;
+}
+
+#fund_r {
+    float: left;
+    background-color: white;
+}
+
+#funder_list {
+    column-count: 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lima_header {
+    margin: 0 0 0 0;
+    width: 100%;
+}
+
+#lima_poster {
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    width: 40%;
+}
+
+#lima_poster img {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+}
+
+#lima_poster p {
+    background-color: white;
+    font-size: 200%;
+    margin: 0px;
+    text-align: center;
+}
+
+#scroll {
+    bottom: 0;
+    background-color: white;
+    font-size: 150%;
+    margin: 5px 5px 20px;
+    opacity: .8;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
+#watch {
+    background-color: white;
+    font-size: 200%;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+
+    .fund_container {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+
+    .images_container {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+
+    .links_outer-grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px 50px 50px;
+    }
+
+    #lima_poster {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+    header {
+        margin-top: 0px;
+    }
+
+    header pre {
+        font-size: 7pt;
+        margin: -125px 0px 10px;
+        min-width: 0;
+    }
+
+    .butvi_title {
+        font-size: 175%;
+        margin: 50px 50px;
+        padding: 5px;
+    }
+
+    .cards_inner-grid {
+        max-width: 24%;
+    }
+
+    .images_container {
+        padding: 5px;
+        margin: 5px 60px;
+    }
+
+    .images_inner-grid {
+        flex: 100%;
+        max-width: 75%;
+    }
+
+    .lima {
+        margin: 0px;
+    }
+
+    #descrip {
+        font-size: 150%;
+        padding: 10px 50px;
+    }
+
+    #lima_poster {
+        margin-bottom: 30px;
+        margin-top: 30px;
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .lima_1ed header pre {
+        margin-top: 0px;
+        background-color: rgba(0, 0, 0, 0.2)
+    }
+
+    header pre {
+        font-size: 5pt;
+        margin: 0px 0px 10px;
+    }
+
+    .butvi_title {
+        font-size: 150%;
+        margin: 25px 50px;
+        padding: 5px;
+    }
+
+    .butvi_links {
+        padding: 25px 10px;
+        font-size: 110%;
+    }
+
+    .cards_inner-grid {
+        max-width: 49%;
+        margin-top: 20px;
+        padding: none;
+    }
+
+    .cards_inner-grid:last-child {
+        margin-bottom: 15px;
+    }
+
+    .descrip_butvi1 {
+        padding: 10px 20px;
+    }
+
+    .fund_container {
+        padding: 5px;
+        margin: 5px 5px;
+    }
+
+    .images_container {
+        margin: 10px 50px 0 50px;
+    }
+
+    .images_inner-grid {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .links_outer-grid {
+        margin: 0px 0 50px;
+    }
+
+    #butvi_links_1 {
+        padding: 10px 10px;
+    }
+
+    #card_title {
+        font-size: 145%;
+    }
+
+    #descrip {
+        font-size: 125%;
+        padding: 10px 10px;
+    }
+
+    #lima_poster {
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        width: 80%;
+    }
+
+    #lima_poster p {
+        background-color: white;
+        font-size: 150%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    #watch {
+        font-size: 150%;
+    }
+
 }
