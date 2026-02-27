@@ -485,14 +485,15 @@ header pre {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     .lima_1ed header pre {
         margin-top: 0px;
         background-color: rgba(0, 0, 0, 0.2)
     }
 
-    header pre {
+    header pre,
+    .lima_hold header pre {
         font-size: 5pt;
         margin: 0px 0px 10px;
     }
