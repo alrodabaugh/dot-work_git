@@ -332,6 +332,10 @@ footer {
     font-size: 100%;
   }
 
+  #mc_embed_signup {
+    width: 400px;
+  }
+
   #work_words img {
     width: 375px;
   }
