@@ -1,1 +1,4 @@
-testing.
+version: STSv1
+mode: testing
+mx: mx1.hostinger.com
+mx: mx2.hostinger.com
