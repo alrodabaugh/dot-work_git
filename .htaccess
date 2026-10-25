@@ -3,17 +3,12 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 RewriteOptions inherit
-RewriteEngine on
-Header set content-Security-Policy: upgrade-insecure-requests
-
-RewriteEngine on
+Header always set Content-Security-Policy "upgrade-insecure-requests"
 
 # Really Simple SSL
 Header always set Strict-Transport-Security: "max-age=31536000" env=HTTPS
 Header always set Content-Security-Policy "upgrade-insecure-requests"
 Header always set X-Content-Type-Options "nosniff"
-Header always set X-XSS-Protection "1; mode=block"
-Header always set Expect-CT "max-age=7776000, enforce"
 Header always set Referrer-Policy: "no-referrer-when-downgrade"
 # End Really Simple SSL
 RewriteCond %{HTTPS} off
