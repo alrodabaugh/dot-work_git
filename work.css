@@ -333,7 +333,7 @@ footer {
   }
 
   #mc_embed_signup {
-    width: 400px;
+    min-width: 300px;
   }
 
   #work_words img {
